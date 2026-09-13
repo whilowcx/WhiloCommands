@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>dev.whilo</groupId>
+    <artifactId>whilocommands-parent</artifactId>
+    <version>1.0</version>
+  </parent>
+
+  <artifactId>whilocommands-bungee</artifactId>
+  <packaging>jar</packaging>
+
+  <properties>
+    <bungeecord.api.version>1.21-R0.4</bungeecord.api.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>net.md-5</groupId>
+      <artifactId>bungeecord-api</artifactId>
+      <version>${bungeecord.api.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>dev.whilo</groupId>
+      <artifactId>whilocommands-common</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>WhiloCommands-Bungee-1.0</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+</project>

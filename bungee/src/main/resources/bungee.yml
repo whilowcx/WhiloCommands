@@ -1,0 +1,4 @@
+name: WhiloCommands
+main: dev.whilo.whilocommands.bungee.WhiloCommandsPlugin
+version: 1.0
+author: whilo

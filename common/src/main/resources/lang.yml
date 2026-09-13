@@ -1,0 +1,7 @@
+players-only: "&cOnly players can use this command."
+no-permission: "&cYou don't have permission to use this command."
+not-configured: "&cThis command is not configured correctly."
+cooldown: "&cYou must wait %time%s before using this command again."
+reload-usage: "&eUsage: /whilocommands reload"
+reload-success: "&aWhiloCommands configuration reloaded."
+reload-failed: "&cReload failed. Previous commands are still active; check the proxy log."
